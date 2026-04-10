@@ -1,3 +1,8 @@
 /runs
 /test_predict
 yolo26n-seg.pt
+/results_*
+/model_file
+/output
+/results
+/test_images
