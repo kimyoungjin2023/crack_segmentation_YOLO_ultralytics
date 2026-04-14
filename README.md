@@ -54,3 +54,10 @@
  - 위 문제를 해결하기 위해 벽 감지 학습 다시 진행
  - 데이터셋 추가(찾아보기)
  
+
+
+##### 2026.04.14 crack 오탐을 줄이기 위해 classification 사용 하지만 아직 크랙이 감지가 안되는게 몇개 있어 실제 사진으로 fine-tuning wall_seg imgsz 448로 바꿈 오히려 wall_seg 잘됨 crack은 그대로 1280 유지
+ - wall_seg_crack_seg_crack_classification.py은 전체 면적분에 크랙의 비율(픽셀)이다.
+ - wall_seg_crack_seg_crack_classification_ver2.py은 크랙이 나온 Segmentation(wall) 된 범위 안에서의 크랙 비율(픽셀)이다. 
+ - fine-tuning을 사용할 때 백본 얼리고 fine-tuning
+ - classification은 결과 나오면 오탐 확인 후 재학습
