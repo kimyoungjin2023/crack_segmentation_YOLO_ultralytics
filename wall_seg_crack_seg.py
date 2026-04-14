@@ -11,9 +11,9 @@ from ultralytics import YOLO
  
  
 # ── 설정 ────────────────────────────────────────────────────────────────────
-WALL_MODEL   = r"./model_file/wall_segment_ver11.pt"    # ← 벽 세그멘테이션 모델 경로
+WALL_MODEL   = r"./model_file/wall_segment_ver13.pt"    # ← 벽 세그멘테이션 모델 경로
 CRACK_MODEL  = r"./model_file/crack_seg_lab.pt"   # ← 크랙 세그멘테이션 모델 경로
-TEST_IMAGE   = "test.jpg"        # ← 테스트 이미지 경로
+TEST_IMAGE   = "test_camera.JPG"        # ← 테스트 이미지 경로
  
 WALL_CONF    = 0.25              # 벽 감지 confidence threshold
 CRACK_CONF   = 0.25              # 크랙 감지 confidence threshold

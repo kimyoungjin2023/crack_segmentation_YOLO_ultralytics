@@ -15,8 +15,8 @@ from ultralytics import YOLO
  
  
 # ── 설정 ────────────────────────────────────────────────────────────────────
-WALL_MODEL   = r"./model_file/wall_segment_ver11.pt"
-CRACK_MODEL  = r"./model_file/crack_seg_lab.pt"
+WALL_MODEL   = r"./model_file/wall_segment_ver13.pt"
+CRACK_MODEL  = r"./model_file/crack_seg_lab.pt" # 버전 1이 더 성과가 좋음
 IMAGE_DIR    = r"./test_images"   # ← 폴더 경로
  
 WALL_CONF    = 0.25
@@ -26,7 +26,7 @@ IOU          = 0.45
 WALL_COLOR   = (0, 255, 0)       # 벽 마스크 색상 (BGR) - 초록
 CRACK_COLOR  = (0, 0, 255)       # 크랙 마스크 색상 (BGR) - 빨강
 MASK_ALPHA   = 0.4
-OUTPUT_DIR   = r"./results_ver11"       # ← 결과 저장 폴더
+OUTPUT_DIR   = r"./results_ver13"       # ← 결과 저장 폴더
  
 IMAGE_EXTS   = {".jpg", ".jpeg", ".png", ".bmp", ".tiff", ".webp"}
 # ────────────────────────────────────────────────────────────────────────────
