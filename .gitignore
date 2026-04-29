@@ -6,3 +6,5 @@ yolo26n-seg.pt
 /output
 /results
 /test_images
+/test_result_all
+/wall_detected
